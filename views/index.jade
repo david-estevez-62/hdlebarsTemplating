@@ -1,0 +1,21 @@
+extends layout
+
+block content
+	.container		
+			#product-container
+			script(type='text/x-handlebars-template')#1st-template
+				.product
+					h3 {{title}}
+					img(src='{{image}}')
+					p ${{cost}}
+					button.btn.btn-primary(type='submit') Add to Wishlist
+		ul#wishlist
+		script(type='text/x-handlebars-template')#wishlist-template
+			li {{title}}
+				button.btn.btn-primary(type='submit') Remove
+
+
+
+
+
+//- .col-md-4.col-sm-4
